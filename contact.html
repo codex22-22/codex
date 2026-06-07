@@ -2,16 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Contact | Codex Homes LLC</title>
 <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
 <nav>
-  <a href="index.html" class="nav-logo">
-    <img src="logo.png" alt="Codex Homes LLC" style="height:44px; width:auto;"/>
-  </a>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="Codex Homes LLC" style="height:44px; width:auto;"/></a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="services.html">Services</a></li>
@@ -26,113 +22,49 @@
   <div class="orange-bar"></div>
 </div>
 
+<div style="background: var(--orange); padding: 16px 40px; text-align: center;">
+  <p style="color: #fff; font-size: 16px; font-weight: 700; margin: 0;">Specializing in Navigating Greenwood Village Projects</p>
+</div>
+
 <section class="contact-section">
   <div class="contact-grid">
-
     <div class="contact-info">
-      <h2>Let's Talk</h2>
-      <p>Whether you have a specific project in mind or just want to explore what's possible, we're happy to have a straight conversation about what you need and how we can help.</p>
+      <h2>Let us Talk</h2>
+      <p>Whether you have a specific project in mind or just want to explore what is possible, we are happy to have a straight conversation about what you need and how we can help.</p>
       <div class="contact-detail">
-        <div class="contact-item">
-          <div class="icon">📞</div>
-          <div>
-            <strong>Phone</strong>
-            (303) 803-3932
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon">📧</div>
-          <div>
-            <strong>Email</strong>
-            codexhomesco@gmail.com
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon">📍</div>
-          <div>
-            <strong>Location</strong>
-            Centennial, CO<br/>
-            Serving the greater Denver metro area
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon">🕐</div>
-          <div>
-            <strong>Hours</strong>
-            Monday – Friday: 7am – 6pm<br/>
-            Saturday: By appointment
-          </div>
-        </div>
+        <div class="contact-item"><div class="icon">📞</div><div><strong>Phone</strong>(303) 803-3932</div></div>
+        <div class="contact-item"><div class="icon">📧</div><div><strong>Email</strong>codexhomesco@gmail.com</div></div>
+        <div class="contact-item"><div class="icon">📍</div><div><strong>Location</strong>Centennial, CO - Serving the greater Denver metro area</div></div>
+        <div class="contact-item"><div class="icon">🕐</div><div><strong>Hours</strong>Monday - Friday: 7am - 6pm, Saturday: By appointment</div></div>
       </div>
     </div>
-
     <div class="contact-form">
       <h2>Send Us a Message</h2>
       <form action="https://formspree.io/f/meewajlp" method="POST" onsubmit="handleSubmit(event)">
         <div class="form-row">
-          <div class="form-group">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="fname" placeholder="James" required/>
-          </div>
-          <div class="form-group">
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lname" placeholder="Dickerson" required/>
-          </div>
+          <div class="form-group"><label for="fname">First Name</label><input type="text" id="fname" name="fname" required/></div>
+          <div class="form-group"><label for="lname">Last Name</label><input type="text" id="lname" name="lname" required/></div>
         </div>
         <div class="form-row">
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required/>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" placeholder="(303) 000-0000"/>
-          </div>
+          <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required/></div>
+          <div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" name="phone"/></div>
         </div>
-        <div class="form-group">
-          <label for="service">Service Interested In</label>
-          <select id="service" name="service">
-            <option value="">Select a service...</option>
-            <option>New Home Construction</option>
-            <option>Remodeling &amp; Renovation</option>
-            <option>Owner's Rep / Project Management</option>
-            <option>Construction Consulting</option>
-            <option>Not sure yet</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="message">Tell Us About Your Project</label>
-          <textarea id="message" name="message" placeholder="Describe your project, timeline, location, and any other details that would help us understand what you need..." required></textarea>
-        </div>
+        <div class="form-group"><label for="service">Service</label><select id="service" name="service"><option value="">Select...</option><option>New Home Construction</option><option>Remodeling and Renovation</option><option>Project Management</option><option>Construction Consulting</option><option>Not sure yet</option></select></div>
+        <div class="form-group"><label for="message">Tell Us About Your Project</label><textarea id="message" name="message" required></textarea></div>
         <button type="submit" class="form-submit">Send Message</button>
       </form>
-      <div id="success-msg" style="display:none; margin-top:20px; padding:16px; background:#E8F5E9; border-radius:4px; color:#2E7D32; font-weight:600;">
-        ✓ Message sent! We'll be in touch soon.
-      </div>
+      <div id="success-msg" style="display:none; margin-top:20px; padding:16px; background:#E8F5E9; border-radius:4px; color:#2E7D32; font-weight:600;">Message sent! We will be in touch soon.</div>
     </div>
-
   </div>
 </section>
 
 <footer>
   <div class="container footer-inner">
-    <div class="footer-brand">
-      <strong>CODEX HOMES LLC</strong>
-      <span>Old School Principles. New School Approach.</span>
-    </div>
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="footer-contact">
-      <span>📞 (303) 803-3932</span>
-      <span>📧 codexhomesco@gmail.com</span>
-      <span>📍 Centennial, CO</span>
-    </div>
+    <div class="footer-brand"><strong>CODEX HOMES LLC</strong><span>Old School Principles. New School Approach.</span></div>
+    <div class="footer-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+    <div class="footer-contact"><span>📞 (303) 803-3932</span><span>📧 codexhomesco@gmail.com</span><span>📍 Centennial, CO</span></div>
   </div>
-  <div class="footer-copy">© 2026 Codex Homes LLC. All rights reserved.</div>
+  <div class="footer-copy">2026 Codex Homes LLC. All rights reserved.</div>
 </footer>
 
 <script>
@@ -140,18 +72,9 @@ async function handleSubmit(e) {
   e.preventDefault();
   const form = e.target;
   const data = new FormData(form);
-  const response = await fetch(form.action, {
-    method: 'POST',
-    body: data,
-    headers: { 'Accept': 'application/json' }
-  });
-  if (response.ok) {
-    document.getElementById('success-msg').style.display = 'block';
-    form.reset();
-    form.style.display = 'none';
-  }
+  const response = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+  if (response.ok) { document.getElementById('success-msg').style.display = 'block'; form.reset(); form.style.display = 'none'; }
 }
 </script>
-
 </body>
 </html>
